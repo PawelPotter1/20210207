@@ -1,13 +1,13 @@
-const http = require("http");
-
-const handler = (request, response) => {
-    response.end("<p> Hello OK </p>")
-    console.log("działa")
-    }
-
-const server = http.createServer(handler);
+const { response } = require("express");
+const express = require("express");
 const port = 3000;
+const app = express();
 
-server.listen(port, (err) => {
-    if (err) {return console.log("błąd",err)}
+app.get("/", function (req,res) {
+    res.send("<h4>Hello word</h4>")
+})
+
+app.listen(port, (err) => {
+    if (err) { return console.log(err)}
+    console.log(`działa na porcie ${port}`)
 })

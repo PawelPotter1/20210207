@@ -1,0 +1,24 @@
+{
+  "name": "kursnode",
+  "version": "1.0.0",
+  "description": "test\r #\u0000 \u00002\u00000\u00002\u00001\u00000\u00002\u00000\u00007\u0000\r\u0000 \u0000",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PawelPotter1/20210207.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PawelPotter1/20210207/issues"
+  },
+  "homepage": "https://github.com/PawelPotter1/20210207#readme"
+}
