@@ -1,15 +1,23 @@
 const { response } = require("express");
 const express = require("express");
 const path = require("path");
-const { Script } = require("vm");
+const fromAnotherFile = require("./functions");
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 const app = express();
 
 app.set("view engine",'hbs')
+const sample = () => {
+    return 'proba'
+}
+
 app.use('/assets',express.static(path.join(__dirname,"./assets")))
 app.get("/", function (req,res) {
-    res.render(`index`)
+    res.render('index',{
+        pageTitle: "dzisiejsza lekcja",
+        subTitle: fromAnotherFile.title,
+        subSubTitle: sample()
+    })
 })
 
 app.use('/js',express.static(path.join(__dirname, "./js")));
