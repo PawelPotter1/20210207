@@ -4,7 +4,8 @@
   "description": "test\r #\u0000 \u00002\u00000\u00002\u00001\u00000\u00002\u00000\u00007\u0000\r\u0000 \u0000",
   "main": "app.js",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "hbs": "^4.1.1"
   },
   "devDependencies": {},
   "scripts": {
