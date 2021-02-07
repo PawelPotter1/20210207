@@ -1,6 +1,7 @@
-const functions = require("./functions")
+const http = require("http");
+const server = http.createServer();
+const port = 3000;
 
-console.log("hello");
-
-functions.helloword();
-functions.add(4,5);
+server.listen(port, () => {
+    console.log('serwer działa na porcie ${port}')
+})
